@@ -17,9 +17,9 @@
         //run this code if no case matches
         //no need for a break here 
 
-} */
+} */ 
 
-/*switch(2){
+switch(2){
     case 1:
         console.log(1);
         break;
@@ -34,7 +34,7 @@
 
     default:
         console.log("No Match");            
-}*/
+}
 
 
 let computer = "paper";
@@ -70,4 +70,4 @@ switch(playerOne){
         else{
             console.log("playerOne wins");
         }
-}
+} 

@@ -11,7 +11,7 @@ else{
 
 //Example
 
-/*let customerIsBanned = false;
+let customerIsBanned = false;
 let soup = "chicken noodle soup";
 let crackers = true;
 let reply;
@@ -29,11 +29,11 @@ else if(soup){
 else{
     reply = "Sorry we are out of soup";
 }
-console.log(reply);*/
+console.log(reply);
 
 //Example 2
 
-/*let testScore = 89;
+let testScore = 89;
 let collegeStudent = true;
 let grade;
 
@@ -57,10 +57,10 @@ else{
         grade = "F";
     }
 }
-console.log(grade); */
+console.log(grade); 
 
 //Decision tree! (Rock Scissors Paper Game)
-if (playerOne == computer){
+/*if (playerOne == computer){
     //tie game!
 }
 else if(playerOne == "rock"){
@@ -70,7 +70,6 @@ else if(playerOne == "rock"){
     else{
         //playerOne wins
     }
-
 }
 else if(playerOne == "paper"){
     if(computer == "scissors"){
@@ -86,4 +85,4 @@ else{
     else{
         //playerOne wins
     }
-}
+} */
