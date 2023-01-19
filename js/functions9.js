@@ -15,17 +15,17 @@ console.log(getUserNameFromEmail("briankingara4@gmail.com"));
 
 //ANONYMOUS FUNCTIONS
 
-const getUserNameFromEmail = function(email){
+const getUserNameFromEmail1 = function(email){
     return email.slice(0, email.indexOf("@"));
 }
-console.log(getUserNameFromEmail("briankingara4@gmail.com"));
+console.log(getUserNameFromEmail1("briankingara4@gmail.com"));
 
 //ARROW FUNCTIONS
 
-const getUserNameFromEmail = (email) => {
+const getUserNameFromEmail2 = (email) => {
     return email.slice(0, email.indexOf("@"));
 }
-console.log(getUserNameFromEmail("briankingara4@gmail.com"));
+console.log(getUserNameFromEmail2("briankingara4@gmail.com"));
 
 const toProperCase = (name) => {
     return name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();

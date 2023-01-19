@@ -24,7 +24,7 @@ function myFunc(){
 myFunc();
 
 
-/*function myFunc(){
+function myFunc(){
  
     const z = 5;
     console.log(z);
@@ -35,7 +35,7 @@ myFunc();
  }
 
 }
-myFunc();*/
+myFunc();
 
 
 

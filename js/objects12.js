@@ -84,6 +84,7 @@ console.log(Object.values(band));
 // for-in loop
 
 for(let job in band){
+    console.log(job);
     console.log(band[job]);
 }
 for(let job in band){
@@ -99,27 +100,20 @@ console.log(band.hasOwnProperty("drums"));
 
 // Destructuring objects
 
-const {vocals: myVocals,guitar: myGuitar, bass: myBass,drums: myDrums} = band;
+const {vocals: myVocals,guitar: myGuitar, bass: myBass} = band;
 
 console.log(myVocals);
 console.log(myGuitar);
 console.log(myBass);
-console.log(myDrums);
 
-const {vocals, guitar, bass, drums} = band;
+const {vocals, guitar, bass} = band;
 
-console.log("\n");
 console.log(vocals);
 console.log(guitar);
 console.log(bass);
-console.log(drums);
 
 function sings ({vocals}){
     return `${vocals} sings!`
 }
 
-console.log("\n");
 console.log(sings(band));
-
-
-

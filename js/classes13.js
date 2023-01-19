@@ -31,8 +31,7 @@ class AnotherPizza{
     }
     set pizzaCrust(pizzaCrust){
         this.crust = pizzaCrust;
-    }
-    
+    }    
     bakeAgain(){
         console.log(`Baking a ${this.size} ${this.type} ${this.crust}
         crust pizza.`);
@@ -47,9 +46,6 @@ anotherPizza.pizzaType = "pepperoni";
 anotherPizza.pizzaCrust = "thin";
 
 anotherPizza.bakeAgain();
-
-
-console.log("\n");
 
 
 class ImprovedPizza{
@@ -99,20 +95,21 @@ console.log(improvedPizza.getToppings());
 
 improvedPizza.bakePizza(); 
 
-class Pizza{
+
+class Pizza1{
     constructor(pizzaSize){
         this.size = pizzaSize;
         this.crust = "original crust";
     }
-    getCrust(){
+    getSize(){
         return this.crust;
     }
-    setCrust(pizzaCrust){
-        this.crust = pizzaCrust;
+    setSize(pizzaSize){
+        this.size = pizzaSize;
     }
 }
 
-class SpecialtyPizza extends Pizza{
+class SpecialtyPizza extends Pizza1{
     constructor(pizzaSize){
         super(pizzaSize);
         this.type = "The Works";
@@ -122,13 +119,14 @@ class SpecialtyPizza extends Pizza{
     }
 }
 
-const mySpecialty = new SpecialtyPizza("medium");
+const mySpecialty = new SpecialtyPizza();
 
-mySpecialty.setCrust("thick crust");
+mySpecialty.setSize("thick");
 
 mySpecialty.slice(); 
 
 // Factory Function (another way to create an object in javascript)
+// It ensures object properties are private, you can't change then out of the function scope
 
 function pizzaFactory(pizzaSize){
     const crust = "original";
@@ -141,42 +139,42 @@ function pizzaFactory(pizzaSize){
 
 const pizza = pizzaFactory("small");
 pizza.bake(); 
-pizza.crust = "thin";
+pizza.crust = "thin"; // you can't change pizza crust from original to thin because of the factory function
 pizza.bake(); 
 
 
 
 // NAMING CONVENTION
 
-class Pizza{
+class Pizza2{
     constructor(pizzaSize){
-        this._size = pizzaSize;
+        this._size = pizzaSize; // ._ indicate that the property is private
         this._crust = "original crust";
     }
-    getCrust(){
-        return this_.crust;
+    getSize(){
+        return this._size;
     }
-    setCrust(pizzaCrust){
-        this._crust = pizzaCrust;
+    setSize(pizzaSize){
+        this._size = pizzaSize;
     }
 } 
 
-class Pizza{
+class Pizza3{
 
     crust = "original crust";
-    #sause = "traditional";
+    #sause = "traditional"; // # makes the field private meaning it can't be declared outside the class scope
     #size;
 
     constructor(pizzaSize){
         this.#size = pizzaSize;
     }
 
-    getCrust(){
-        return this.crust;
+    getSize(){
+        return this.#size;
     }
       
-    setCrust(pizzaCrust){
-        this.crust = pizzaCrust;
+    setSize(pizzaSize){
+        this.#size = pizzaSize;
     }
 
     hereYouGo(){
@@ -185,9 +183,6 @@ class Pizza{
 
 }
 
-const ppizza = new Pizza("large");
+const pizza3 = new Pizza3("large");
 
-myPizza.hereYouGo(); 
-
-
-
+pizza3.hereYouGo(); 

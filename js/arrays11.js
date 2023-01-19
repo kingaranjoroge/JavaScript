@@ -138,6 +138,3 @@ const sportsStore = [equipDept,clothesDept];
 
 console.log(sportsStore[0][0][2]);
 console.log(sportsStore[1][1][1]);
-
-
-
