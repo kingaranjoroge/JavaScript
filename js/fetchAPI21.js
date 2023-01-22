@@ -51,11 +51,11 @@ myNextPromise.then(value => {
 
 myPromise.then(value => {
     console.log(value);
-}) 
+}) */
 
 //3.FETCH
 
-const users = fetch("https://jsonplaceholder.typicode.com/users");
+/*const users = fetch("https://jsonplaceholder.typicode.com/users");
 
 //pending state
 console.log(users); 
@@ -72,15 +72,15 @@ fetch("https://jsonplaceholder.typicode.com/users").then(response => {
     data.forEach(user => {
         console.log(user);
     })
-}) 
+}) */
 
 
 //Async/Await
-const myUsers = {
+/*const myUsers = {
     userList: []
-}
+} */
 
-const myCoolFunction1 = async () => {
+/*const myCoolFunction1 = async () => {
     const response = await fetch("https:/jsonplaceholder.typicode.com/users")
     const jsonUserData = await response.json();
     console.log(jsonUserData);
@@ -126,12 +126,12 @@ const getAllUserEmails = async () => {
 const postToWebPage = (data) => {
     console.log(data);
 }
-getAllUserEmails();
+getAllUserEmails(); */
 
 
 //2nd parameter of fetch, it's an object
 
-const getDadJoke = async () => {
+/*const getDadJoke = async () => {
     const response = await fetch("https:/jsonplaceholder.typicode.com/users", {
         method: "GET",
         headers: {
@@ -173,18 +173,23 @@ const postData = async (jokeObj) => {
     })
     const jsonResponse = await response.json();
 
-    console.log(jsonResponse.headers);
+    console.log(jsonResponse);
 }
 postData(jokeObject); 
 
-const requestJoke = async (firstName, lastName) => {
-    const response = await fetch();
+const requestJoke = async () => {
+    const response = await fetch("https://icanhazdadjoke.com", {
+        method: "GET",
+        headers: {
+            Accept: "application/json"
+        }
+    });
 
     const jsonResponse = await response.json();
 
     console.log(jsonResponse);
 }
-requestJoke("Brian","Njoroge"); */
+requestJoke();  */
 
 //abstract into functions
 
@@ -221,8 +226,5 @@ const processJokeRequest = async () => {
     await requestJoke(requestUrl);
     console.log("finished");
 }
-processJokeRequest();
-
-
-
+processJokeRequest(); 
 

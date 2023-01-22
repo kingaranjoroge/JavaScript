@@ -4,33 +4,61 @@
   ii)returns a function as the result
 */
 
-import {posts} from "./post.js"
+
+items = [
+    {
+        id: 1,
+        checked: false,
+        item: "One half pound bag of cocoa covered almonds unslated"
+    },
+    {
+        id: 2,
+        checked: false,
+        item: "Pizza"
+    },
+    {
+        id: 4,
+        checked: false,
+        item: "Sushi"
+    },
+    {
+        id: 5,
+        checked: false,
+        item: "Brown rice"
+    },
+    {
+        id: 6,
+        checked: false,
+        item: "Bread"
+    }
+]
+  
 
 //1.for each
 
-posts.foreach((post) => {
-    console.log(post);
+items.forEach((item) => {
+    console.log(item);
 })
 
 //2.filter
 
-const filteredPosts = posts.filter((post) => {
-    return post.userId === 1;
+const filteredItems = items.filter((item) => {
+    return item.id;
 })
-console.log(filteredPosts);
+console.log(filteredItems);
 
 //3.map
 
-const mappedPosts = filteredPosts.map((post) => {
-    return post.id*10;
+const mappedItems = filteredItems.map((item) => {
+    return item.id*10;
 })
-console.log(mappedPosts);
+console.log(mappedItems);
 
 //4.reduce
 
-const reducedPostsValue = mappedPosts.reduce((sum, post) => {
-    return sum+post;
+const reducedItemsValue = mappedItems.reduce((sum, item) => {
+    return sum+item;
 }) 
-console.log(reducedPostsValue);
+console.log(reducedItemsValue);
 
 

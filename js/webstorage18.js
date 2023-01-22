@@ -18,11 +18,11 @@ const myObject = {
 
 //myObject.logName();
 
-sessionStorage.setItem("mySessionStore", JSON.stringify(myObject));
+/*sessionStorage.setItem("mySessionStore", JSON.stringify(myObject));
 
 const mySessionData = JSON.parse(sessionStorage.getItem("mySessionStore"));
 console.log(mySessionData);
-console.log(typeof mySessionData); 
+console.log(typeof mySessionData); */
 
 /*sessionStorage.setItem("mySessionStore",myArray);
 
@@ -55,6 +55,5 @@ const mylocalData = JSON.parse(localStorage.getItem("mylocalStore"));
 
 console.log(mylocalData);
 console.log(key);
-console.log(storeLength);
-
+console.log(storeLength); 
 

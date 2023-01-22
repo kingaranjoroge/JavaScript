@@ -1,6 +1,6 @@
 // JavaScript Errors and Error Handling
 
-/*"use strict";
+/* "use strict";
 
 variable = "Brian";    // reference errors
 console.log(variable);
@@ -17,12 +17,18 @@ name = "Eve"; */
     }
     catch(err){
         console.error(err); // can do err.name/message/stack
-        //can do console.log/error/warn/table
+                            // can do console.log/error/warn/table
     }
 }
 makeError(); */
 
-/*const makeError = () => {
+/*function customError(message){
+    this.message = message;
+    this.name = "customError";
+    this.stack = `${this.name}: ${this.message}`;
+}
+
+const makeError = () => {
     try{
        throw new customError("This is a custom error!"); 
     }
@@ -32,13 +38,7 @@ makeError(); */
         console.error(err.stack); 
     }
 }
-makeError();
-
-function customError(message){
-    this.message = message;
-    this.name = "customError";
-    this.stack = `${this.name}: ${this.message}`;
-} */
+makeError(); */
 
 /*const makeError = () => {
     try{
@@ -72,8 +72,5 @@ const makeError = () => {
         }
     }
 }
-makeError();
-
-
-
+makeError(); 
 

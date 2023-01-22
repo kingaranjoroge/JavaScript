@@ -1,4 +1,4 @@
-// JSON: Javascript Object Notation
+// JSON: JavaScript Object Notation
 
 /*
 JSON is used to send and receive data.

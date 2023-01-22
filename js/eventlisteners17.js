@@ -1,24 +1,24 @@
 //JavaScript Event Listeners
 
 view1.style.display = "none";
-view2.style.display = "none";
-view3.style.display = "flex";
+view2.style.display = "flex";
+view3.style.display = "none";
 
 //Syntax: addEventListener(event, function, useCapture)
 
-const doSomething = () => {
+/*const doSomething = () => {
     alert("doing something");
-}
+} */
 
-h2.addEventListener("click", doSomething, false);
-h2.removeEventListener("click", doSomething, false);
+//h2.addEventListener("click", doSomething, false);
+//h2.removeEventListener("click", doSomething, false);
 
-h2.addEventListener("click", (event) => {
+/*h2.addEventListener("click", (event) => {
     console.log(event.target);
     event.target.textContent = "Clicked";
-}) 
+}) */
 
-document.addEventListener("readystatechange", (event) => {
+/*document.addEventListener("readystatechange", (event) => {
     if(event.target.readyState === "complete"){
         console.log("readyState: complete");
         initApp();
@@ -31,7 +31,7 @@ const initApp = () => {
     const h2 = div.querySelector("h2");
 
     view.addEventListener("click", (event) => {
-        //view.style.backgroundColor = "purple";
+        view.style.backgroundColor = "purple";
     })
     div.addEventListener("click", (event) => {
         div.style.backgroundColor = "blue";
@@ -39,9 +39,9 @@ const initApp = () => {
     h2.addEventListener("click", (event) => {
         event.target.textContent = "Clicked"
     })
-} 
+} */
 
-document.addEventListener("readystatechange", (event) => {
+/*document.addEventListener("readystatechange", (event) => {
     if(event.target.readyState === "complete"){
         console.log("readyState: complete");
         initApp4();
@@ -74,7 +74,7 @@ const initApp4 = () => {
     nav.addEventListener("mouseout", (event) => {
         event.target.classList.remove("height100");
     })
-} 
+} */
 
 document.addEventListener("readystatechange", (event) => {
     if(event.target.readyState === "complete"){
@@ -101,7 +101,7 @@ const initApp2 = () => {
 } 
 
 
-document.addEventListener("readystatechange", (event) => {
+/*document.addEventListener("readystatechange", (event) => {
     if(event.target.readyState === "complete"){
         console.log("readyState: complete");
         initApp3();
@@ -122,9 +122,9 @@ const initApp3 = () => {
     h2.addEventListener("click", (event) => {
         event.target.textContent = "Clicked"
     })
-} 
+} */
 
-document.addEventListener("readystatechange", (event) => {
+/*document.addEventListener("readystatechange", (event) => {
     if(event.target.readyState === "complete"){
         console.log("readyState: complete");
         initApp5();
@@ -139,4 +139,4 @@ const initApp5 = () => {
         event.preventDefault();
         console.log("submit event");
     })
-}
+} */

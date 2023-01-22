@@ -62,8 +62,8 @@ console.log(evenDivs[0].parentElement.previousSibling);
 console.log(evenDivs[0].parentElement.previousElementSibling);
 
 //Adding and Removing elements from DOM
-view1.style.display = "none";
-view2.style.display = "flex";
+view1.style.display = "flex";
+view2.style.display = "none";
 
 view2.style.flexDirection = "row";
 view2.style.flexWrap = "wrap";
@@ -91,3 +91,5 @@ while(view2.lastChild){
  for(i = 1; i<=12; i++){
     createDivs(view2,i);
  } 
+
+ 

@@ -24,4 +24,4 @@ export const shredding = () => {
 
 export const plucking = () => {
     return "Plucking the strings...";
-}
+} 
